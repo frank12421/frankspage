@@ -1,8 +1,17 @@
 * {
   box-sizing: border-box;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: cadetblue;
 }
 
 .navidesign {
   list-style-type: none;
+}
+
+.navi__list__style {
+  display: inline;
+  padding-right: 1em;
 }
