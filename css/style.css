@@ -26,29 +26,52 @@ h1 {
   animation-iteration-count: infinite;
 }
 
-.animation:hover {
-  color: aliceblue;
-}
-
 @keyframes mycolor {
   0% {
-    font-size: 60vh;
+    font-size: 50vh;
     color: hsl(0deg 100% 50%);
   }
   25% {
-    font-size: 64vh;
+    font-size: 53vh;
     color: hsl(90deg 100% 10%);
   }
   50% {
-    font-size: 66vh;
+    font-size: 56vh;
     color: hsl(180deg 50% 50%);
   }
   75% {
-    font-size: 64vh;
+    font-size: 53vh;
     color: hsl(270deg 100% 80%);
   }
   100% {
-    font-size: 60vh;
+    font-size: 50vh;
     color: hsl(360deg 100% 50%);
+  }
+}
+
+.container__characters {
+  display: flex;
+}
+
+.single__letter {
+  /* background-color: green; */
+}
+
+.single__letter:hover {
+  /* background-color: coral; */
+  animation: wiggle 200ms;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes wiggle {
+  0% {
+    rotate: (0deg);
+  }
+  50% {
+    rotate: 3deg;
+  }
+  100% {
+    rotate: 0deg;
   }
 }
