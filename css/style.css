@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 40vh;
+  color: hsl(50 100% 50%);
+  font-weight: 400;
+}
+
+.animation {
+  animation-name: mycolor;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.animation:hover {
+  color: aliceblue;
+}
+
+@keyframes mycolor {
+  0% {
+    font-size: 60vh;
+    color: hsl(0deg 100% 50%);
+  }
+  25% {
+    font-size: 64vh;
+    color: hsl(90deg 100% 10%);
+  }
+  50% {
+    font-size: 66vh;
+    color: hsl(180deg 50% 50%);
+  }
+  75% {
+    font-size: 64vh;
+    color: hsl(270deg 100% 80%);
+  }
+  100% {
+    font-size: 60vh;
+    color: hsl(360deg 100% 50%);
+  }
+}
