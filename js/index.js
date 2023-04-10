@@ -13,7 +13,7 @@ function disintegratName(myName) {
   container.classList.add("container__characters");
   container.setAttribute("data-js", "containerCharacters");
   myArray.forEach((element, index) => {
-    console.log(index);
+    // console.log(index);
     container.append(styleCharacter(element, index));
   });
   return container;

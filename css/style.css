@@ -25,7 +25,8 @@ h1 {
 }
 
 .single__letter {
-  /* background-color: green; */
+  background-color: green;
+  font-size: 10vh;
 }
 
 .single__letter__first {
